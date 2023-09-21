@@ -1,10 +1,9 @@
 arr=[1,2,3,4,5,6,7,8]
 
-def repeat(arr):
-    for i in range(len(arr)):
-        for n in range(len(arr)):
-            if arr[i]==arr[n] and i != n:
-               return False
-    return True
+def repeated(arr):
+    # set removes repeated numbers in list
+    if len(set(arr))!=len(arr):
+        return True
+    return False
 
-print(repeat(arr))
+print(repeated(arr))

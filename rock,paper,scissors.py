@@ -3,8 +3,10 @@ a1="rock"
 a2="paper"
 a3="scissor"
 list=[a1,a2,a3]
+
 user_choice=int(input("chose 1 for rock / 2 for paper / 3 for scissor "))
 com_choice=random.randint(1,3)
+
 print("you chose :", list[user_choice-1])
 print("computer chose :" ,list[com_choice-1])
 

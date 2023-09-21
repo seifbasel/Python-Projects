@@ -1,12 +1,14 @@
 from turtle import clear
 bids = {}
+# refer to end of bidding
 bidding_finished = False
 
+
+# function to find highest bidder,bid
 
 def find_highest_bidder(bidding_record):
   highest_bid = 0
   winner = ""
-  # bidding_record = {"Angela": 123, "James": 321}
   for bidder in bidding_record:
     bid_amount = bidding_record[bidder]
     if bid_amount > highest_bid:
@@ -15,6 +17,7 @@ def find_highest_bidder(bidding_record):
   print(f"The winner is {winner} with a bid of ${highest_bid}")
 
 
+# function to keep getting bids as the user may want
 while not bidding_finished:
   name = input("What is your name?: ")
   price = int(input("What is your bid?: $"))
